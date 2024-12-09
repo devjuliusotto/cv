@@ -1,0 +1,16 @@
+.spacer {
+    flex: 1 1 auto;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+  }
+  
+  @media (max-width: 600px) {
+    nav a {
+      display: none; /* Você pode implementar um menu hamburguer para dispositivos móveis */
+    }
+  }
+  

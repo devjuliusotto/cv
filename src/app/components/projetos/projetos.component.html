@@ -1,0 +1,16 @@
+<div class="projetos-container">
+    <mat-card *ngFor="let projeto of projetos" class="projeto-card">
+      <mat-card-header>
+        <mat-card-title>{{ projeto.titulo }}</mat-card-title>
+        <mat-card-subtitle>{{ projeto.tecnologias }}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image [src]="projeto.imagem" alt="{{ projeto.titulo }}">
+      <mat-card-content>
+        <p>{{ projeto.descricao }}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <a mat-button color="primary" [href]="projeto.link" target="_blank">Ver Projeto</a>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+  
